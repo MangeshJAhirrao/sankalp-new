@@ -6,7 +6,7 @@ import { parse } from 'csv-parse/sync';
 const data: Record<string, Record<string, string>> = {};
 
 try {
-  const csvPath = path.join(process.cwd(), 'public', 'the_only_final.csv');
+  const csvPath = path.join(process.cwd(), 'public', 'final_csv_itinerary.csv');
   const records = parse(fs.readFileSync(csvPath, 'utf-8'), {
     columns: true,
     skip_empty_lines: true
